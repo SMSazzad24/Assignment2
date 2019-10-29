@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Currency</title>
+	<link rel="stylesheet" href="c.css">
+</head>
+<body class="bor">
+
+  <div class="dr" style="max-width: 30rem; height: 30rem;">
+  <div class="clr" style="font-size: 30px; ">Convert Currency</div>
+  <div class="clr">
+    
+
+
+
+
+<h3>Sclect Currency</h3>
+<select name="currency" id="inputCurrency" onchanhge="firstTOsecond()" onclick="firstTOsecond()" oninput="firstTOsecond()">
+	
+<option value="select">Select</option>
+<option value="Taka">Bangladeshi Taka</option>
+<option value="Rupee">USA Dollar</option>
+<option value="Doller"> Indian Rupe</option>
+<option value="Riyal"> Euro Eur</option>
+
+
+</select>
+<input type="number" name="first" onclick="firstTOsecond()" oninput="firstTOsecond()" id="firstCurrency">
+
+<h3 class="mt-5">Convert Currency</h3>
+
+
+
+<select name="" id="outputCurrency"onchanhge="firstTOsecond()" onclick="firstTOsecond()" oninput="firstTOsecond()">
+	
+<option value="select">Select</option>
+<option value="Taka1">Bangladeshi Taka</option>
+<option value="Rupee1">USA Dollar</option>
+<option value="Doller1"> Indian Rupe </option>
+<option value="Riyal1"> Euro Eur </option>
+
+
+</select>
+
+<input type="number" name="Second " id="secondCurrency"  >
+
+<script type="text/javascript">
+	
+function firstTOsecond(){
+	
+var input1=document.getElementById("firstCurrency").value;
+var input2=document.getElementById("secondCurrency").value;
+if(document.getElementById("inputCurrency").value=='Taka')
+
+{
+
+
+if(document.getElementById("outputCurrency").value=='Taka1'){
+
+
+document.getElementById("secondCurrency").value=input1*1;
+
+
+
+
+
+}
+
+
+
+else if(document.getElementById("outputCurrency").value=='Dollar1'){
+
+
+document.getElementById("secondCurrency").value=input1*0.01182;
+
+
+
+
+
+}
+
+
+
+
+
+else if(document.getElementById("outputCurrency").value=='Rupe1'){
+
+
+document.getElementById("secondCurrency").value=input1*0.85942;
+
+
+
+
+
+}
+else if(document.getElementById("outputCurrency").value=='Eur1'){
+
+
+document.getElementById("secondCurrency").value=input1*0.011;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+if(document.getElementById("inputCurrency").value=='Dollar')
+
+{
+
+
+if(document.getElementById("outputCurrency").value=='Taka1'){
+
+
+document.getElementById("secondCurrency").value=input1*82.9257;
+
+
+
+
+
+}
+
+
+
+else if(document.getElementById("outputCurrency").value=='Rupe1'){
+
+
+document.getElementById("secondCurrency").value=input1*72.6941;
+
+
+
+
+
+}
+
+
+
+
+
+else if(document.getElementById("outputCurrency").value=='Dollar1'){
+
+
+document.getElementById("secondCurrency").value=input1*1;
+
+
+
+
+
+}
+else if(document.getElementById("outputCurrency").value=='Eur1'){
+
+
+document.getElementById("secondCurrency").value=input1*0.90;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+if(document.getElementById("inputCurrency").value=='Rupe')
+
+{
+
+
+if(document.getElementById("outputCurrency").value=='Taka1'){
+
+
+document.getElementById("secondCurrency").value=input1*1.13876;
+
+
+
+
+
+}
+
+
+
+else if(document.getElementById("outputCurrency").value=='Rupe1'){
+
+
+document.getElementById("secondCurrency").value=input1*1;
+
+
+
+
+
+}
+
+
+
+
+
+else if(document.getElementById("outputCurrency").value=='Dollar1'){
+
+
+document.getElementById("secondCurrency").value=input1*0.01373;
+
+
+
+
+
+}
+else if(document.getElementById("outputCurrency").value=='Eur1'){
+
+
+document.getElementById("secondCurrency").value=input1*0.013;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+if(document.getElementById("inputCurrency").value=='Eur')
+
+{
+
+
+if(document.getElementById("outputCurrency").value=='Taka1'){
+
+
+document.getElementById("secondCurrency").value=input1*94.03;
+
+
+
+
+
+}
+
+
+
+else if(document.getElementById("outputCurrency").value=='Rupe1'){
+
+
+document.getElementById("secondCurrency").value=input1*78.75;
+
+
+
+
+
+}
+
+
+
+
+
+else if(document.getElementById("outputCurrency").value=='Dollar1'){
+
+
+document.getElementById("secondCurrency").value=input1*1.11;
+
+
+
+
+
+}
+else if(document.getElementById("outputCurrency").value=='Eur1'){
+
+
+document.getElementById("secondCurrency").value=input1*1;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+</script>
+
+  </div>
+
+	
+
+</body>
+</html>
